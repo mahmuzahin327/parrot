@@ -1,0 +1,97 @@
+
+
+
+
+## ✅ **What is cURL?**
+
+* `curl` is a **command-line tool** used to **transfer data** to or from a server using protocols like HTTP, HTTPS, FTP, etc.
+* Commonly used to test **APIs**, **download files**, and **send data**.
+
+---
+
+## ✅ **Basic cURL Syntax**
+
+```bash
+curl [options] [URL]
+```
+
+---
+
+## ✅ **Common cURL Commands**
+
+### 1️⃣ **Get Request (Fetch Webpage/API)**
+
+```bash
+curl https://example.com
+```
+
+### 2️⃣ **Save Response to a File**
+
+```bash
+curl -o filename.html https://example.com
+```
+
+### 3️⃣ **Get Request with Verbose Output**
+
+```bash
+curl -v https://example.com
+```
+
+### 4️⃣ **Send a POST Request (Form Data)**
+
+```bash
+curl -X POST -d "username=user&password=pass" https://example.com/login
+```
+
+### 5️⃣ **Send a POST Request with JSON Data**
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"name":"John","age":30}' https://example.com/api/users
+```
+
+### 6️⃣ **Send Headers**
+
+```bash
+curl -H "Authorization: Bearer <token>" https://example.com/api/data
+```
+
+### 7️⃣ **Download a File Silently**
+
+```bash
+curl -s -O https://example.com/file.zip
+```
+
+### 8️⃣ **Follow Redirects Automatically**
+
+```bash
+curl -L https://example.com
+```
+
+---
+
+## ✅ **cURL Options Cheat Sheet**
+
+| Option | Description                                     |
+| ------ | ----------------------------------------------- |
+| `-X`   | Specify request method (GET, POST, PUT, DELETE) |
+| `-d`   | Send data in POST requests                      |
+| `-H`   | Add HTTP headers                                |
+| `-o`   | Save output to file                             |
+| `-O`   | Save file with original filename                |
+| `-v`   | Verbose output (debug)                          |
+| `-L`   | Follow redirects                                |
+| `-s`   | Silent mode (no progress bar)                   |
+
+---
+
+## ✅ **Example: Test API with cURL**
+
+```bash
+curl -X GET https://jsonplaceholder.typicode.com/posts/1
+```
+
+---
+
+### 🔽 Do you want me to give you a **simple cURL cheat sheet PDF for API testing**?
+
+Reply **"Yes, cURL cheat sheet"** if you'd like. 😊
